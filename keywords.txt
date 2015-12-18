@@ -1,0 +1,2 @@
+BLE     KEYWORD1
+serial  KEYWORD2
