@@ -3,7 +3,9 @@
  * Created by Shrikant Patnaik, December 19, 2015
  * Released under MIT license
  */
- 
+#ifndef BLEConstants_h
+#define BLEConstants_h
+
 #define DEFAULT_BLE_BAUD 9600
 #define DEFAULT_SERIAL_BAUD 9600
 
@@ -18,7 +20,7 @@ typedef enum
   BAUD_2400 = 6,
   BAUD_1200 = 7,
   BAUD_230400 = 8
-  
+
 } BaudRates;
 
 
@@ -28,3 +30,5 @@ static const char PIN_CMD[] = "AT+PASS";
 static const char QUERY_CHAR[] = "?";
 static const char WELCOME_MSG[] = "Serial Ports Opened";
 static const char AT_RESPONSE_MSG[] = "AT Response Received: ";
+
+#endif
