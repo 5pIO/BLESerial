@@ -8,7 +8,7 @@
 
 #include "Arduino.h"
 #include <SoftwareSerial.h>
-#include "BLEConstants.h"
+#include "utility/BLEConstants.h"
 
 
 class BLESerial
@@ -17,13 +17,13 @@ class BLESerial
     BLESerial(int RX_Pin, int TX_Pin);
     void enableSerial(bool enable);
     void begin();
-    
+
     int available();
     void setSerialBaud(int baud);
     void setBLEBaud(int baud);
     int write(uint8_t toWrite);
     int read();
-    
+
     void setName(String name);
     void getName();
     void setBaud(BaudRates baud);
@@ -41,4 +41,3 @@ class BLESerial
 };
 
 #endif
-
